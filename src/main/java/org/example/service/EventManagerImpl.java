@@ -27,7 +27,7 @@ public class EventManagerImpl implements EventManager {
             try (ResultSet generatedKeys = pstmt.getGeneratedKeys()) {
                 if (generatedKeys.next()) {
                     int generatedId = generatedKeys.getInt(1);
-                    event.setId(generatedId); // ⬅ Ось тут ми його ставимо в об'єкт
+                    event.setId(generatedId);
                 }
             }
 
